@@ -88,21 +88,22 @@ Traffic Signal Execution
 
 ## 🧩 Project Structure
 
+```text
 smart_traffic_system/
 │
 ├── src/
-│ ├── main_controller.py # Main execution controller
-│ ├── ai_signal_controller.py # Adaptive signal decision logic
-│ ├── emergency_preemption.py # Ambulance handling logic
-│ ├── data_collector.py # TraCI traffic data extraction
-│ ├── phase_mapper.py # Signal phase mapping
-│ ├── config.py # System configuration
-│ └── logger.py # Logging utilities
+│   ├── main_controller.py        # Main execution controller
+│   ├── ai_signal_controller.py   # Adaptive signal decision logic
+│   ├── emergency_preemption.py   # Ambulance handling logic
+│   ├── data_collector.py         # TraCI traffic data extraction
+│   ├── phase_mapper.py           # Signal phase mapping
+│   ├── config.py                 # System configuration
+│   └── logger.py                 # Logging utilities
 │
-├── sumo_files/ # SUMO network + route files
-├── docs/ # Detailed documentation
+├── sumo_files/                   # SUMO network + route files
+├── docs/                         # Detailed documentation
 └── README.md
-
+```
 
 ---
 
@@ -116,7 +117,6 @@ smart_traffic_system/
 
 ### Python Dependencies
 
-```bash
 pip install -r requirements.txt
 ▶️ Running the Project
 1️⃣ Normal Traffic Simulation
@@ -129,7 +129,10 @@ python src/main_controller.py
 
 This activates emergency vehicle preemption logic.
 
-⏱️ Simulation Timing (IMPORTANT)
+---
+
+
+## ⏱️ Simulation Timing (IMPORTANT)
 
     SUMO runs faster than real time by default.
 
@@ -146,7 +149,9 @@ This activates emergency vehicle preemption logic.
 
     Accurate demonstration behaviour
 
-🚑 Emergency Scenario Behavior
+---
+
+## 🚑 Emergency Scenario Behavior
 
 In emergency mode:
 
@@ -161,7 +166,9 @@ If the simulation is paused early, the ambulance can be observed near the southe
 
 ⚠️ If simulation delay is too low, the ambulance may appear to move too quickly.
 
-🧠 Algorithm Overview
+---
+
+## 🧠 Algorithm Overview
 
 The system operates in a continuous control loop:
 
@@ -197,7 +204,9 @@ Emergency Handling
 
 https://sumo.dlr.de/docs/TraCI.html
 
-🧱 Fail-Safe Design
+---
+
+## 🧱 Fail-Safe Design
 
     The system is designed to never fully fail.
 
@@ -211,7 +220,9 @@ https://sumo.dlr.de/docs/TraCI.html
 
     Safe default phase switching
 
-📍 Simulation Environment
+---
+
+## 📍 Simulation Environment
 
 Tested on:
 
@@ -227,7 +238,9 @@ Includes:
 
     4. Realistic urban traffic behaviour
 
-🚀 Future Improvements
+---
+
+## 🚀 Future Improvements
 
     Reinforcement learning signal optimization
 
@@ -239,7 +252,9 @@ Includes:
 
     Predictive traffic modeling
 
-🤝 Open Source Contribution
+---
+
+## 🤝 Open Source Contribution
 
     Contributions are welcome.
 
@@ -250,7 +265,9 @@ Includes:
     Create a feature branch
 
     Submit a pull request
+    
+---
 
-📜 License
+## 📜 License
 
 MIT License

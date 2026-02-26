@@ -200,4 +200,4 @@ Yes — architecture supports multi-junction expansion.
 
 Recommended closing line:
 
-> This system demonstrates how logic-driven AI can transform static traffic signals into adaptive, re
+> This system demonstrates how logic-driven AI can transform static traffic signals into adaptive, real-time decision-making agents capable of improving traffic flow and emergency response efficiency.

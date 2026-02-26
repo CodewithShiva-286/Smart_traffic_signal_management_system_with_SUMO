@@ -79,7 +79,7 @@ SUMO becomes the environment
 
 -----
 
-📊 Reading Traffic Data
+## 📊 Reading Traffic Data
 
 Handled mainly in:
 
@@ -108,7 +108,9 @@ traci.lane.getLastStepMeanSpeed(lane_id)
 
 Useful for future upgrades.
 
-🚦 Reading Signal State
+---
+
+## 🚦 Reading Signal State
 
 The controller can inspect traffic lights:
 
@@ -120,7 +122,9 @@ Monitoring current phase
 
 Preventing unsafe transitions
 
-🟢 Controlling Traffic Signals
+---
+
+## 🟢 Controlling Traffic Signals
 
 This is where AI decisions are applied.
 
@@ -138,7 +142,9 @@ traci.trafficlight.setPhaseDuration(tls_id, duration)
 
 Allows adaptive timing control.
 
-🔄 Real-Time Control Loop
+---
+
+## 🔄 Real-Time Control Loop
 
 Every control cycle:
 
@@ -190,7 +196,7 @@ Updates traffic state
 
 Allows new decisions
 
-🧩 Why TraCI Makes This Project AI-Driven
+## 🧩 Why TraCI Makes This Project AI-Driven
 
 TraCI enables:
 
@@ -221,7 +227,7 @@ This keeps behaviour understandable during demos.
 
 ---
 
-### Performance Consideration
+## Performance Consideration
 
 TraCI calls are lightweight but frequent.
 
